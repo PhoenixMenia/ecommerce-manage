@@ -1,0 +1,141 @@
+@import "_util/mixins";
+@import "_util/reset";
+@import "_util/layout";
+@import "_util/icons";
+@import "_util/widget";
+.el-breadcrumb__separator,.moretxt{
+	font-family:monospace;
+	font-weight: bold;
+}
+.el-tooltip__popper.more-rights{
+  background-color: #f5f8fb;
+  border: 1px solid #dddddd;
+  border-radius: 0;
+  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.05);
+  .popper__arrow{
+    border-color: #dddddd;
+    border-top-color:#ffffff;
+    border-bottom-color:#ffffff;
+  }
+  .popper__arrow::after {
+    border-right-color: #f5f8fb;
+  }
+}
+//侧边导航；会员CRM
+.el-menu{
+  // background-color: #ffffff;
+  .el-menu-item{
+    color: #666666;
+    font-size: 14px;
+  }
+}
+.el-submenu .el-menu{
+  // background-color: #ffffff;
+  border-right:none;
+}
+.el-submenu{
+  // opacity:0.7;
+  &.is-active{
+    opacity:1;
+  }
+  .el-menu-item{
+    padding-left: 70px!important;
+    &:hover{
+      // background-color:#f0f7fc;
+      background-color: #E6E6E6;
+    }
+  }
+}
+.el-menu-item.is-active{
+  // background-color: #eef1fc;
+  font-size: 14px;
+  //font-weight: 600;
+  color: #347EFF;
+  position:relative;
+  // &:before{
+  //   content:'';
+  //   width:4px;
+  //   height:14px;
+  //   background-color:#5975e1;
+  //   position:absolute;
+  //   left:26px;
+  //   top:50%;
+  //   margin-top:-7px;
+  // }
+}
+.el-submenu__title{
+  color: #323232;
+  font-size: 16px;
+  &:hover{
+    background-color: #E6E6E6;
+  }
+  i{
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-bottom: 4px;
+  }
+}
+.el-table--enable-row-hover .el-table__body tr:hover > td{
+  background-color: #F4F6FF;
+  // background: #f8f8f8;
+}
+
+// 覆盖element ui alert组件样式
+.el-alert {
+  border-radius:0;
+  padding: 6px 10px;
+  &--warning {
+    color: #654D36;
+    border:solid 1px #E8DAD1;
+    background: #FFF9F0;
+  }
+  &__content {
+    padding-left: 0;
+  }
+}
+.tac,.w-data-table.tac.el-table th{
+  text-align: left;
+}
+.w-data-table.tac.el-table th,.w-data-table.tac.el-table td{
+  padding: 5px;
+}
+.w-data-table.el-table th > .cell {
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+// 提示说明按钮
+.w-btn-tips{
+  cursor: pointer;
+  margin-left: 10px;
+  height: 36px;
+  border: 1px solid #F1F1F1;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(50,50,50,0.05);
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  font-weight: normal;
+  padding-left: 10px;
+  padding-right: 10px;
+  &:link,&:visited {
+    color: #888888;
+  }
+  &.tiny {
+    border:none;
+    box-shadow:none;
+  }
+  &.small {
+    font-size: 14px;
+    height: 24px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .icon-qa{
+    margin-left: 5px;
+  }
+}
+.w-btn-tips:hover{
+  color: #347EFF;
+  border-color: #e1e1e1;
+}

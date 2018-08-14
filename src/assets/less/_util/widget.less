@@ -1,0 +1,223 @@
+.w-pagination {
+    justify-content: flex-end;
+    .el-pagination {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        text-align: right;
+    }
+    .el-pagination__sizes {
+        float: left;
+    }
+}
+
+.w-data-table {
+    &.el-table th {
+        padding: 5px;
+        height: 24px;
+    }
+    &.tac.el-table th {
+        // text-align: center;
+    }
+    &.el-table th>.cell {
+        font-weight: normal;
+    }
+    &.el-table .cell {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.cs-content-title {
+    font-size: 16px;
+    position: relative;
+    padding: 12px;
+    margin: 16px 0;
+    .start-line {
+        display: inline-block;
+        width: 2px;
+        height: 16px;
+        background-color: #495461;
+        position: absolute;
+        top: 14px;
+        left: 0;
+    }
+    .subtitle {
+        color: #323232;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .buttons {
+        position: absolute;
+        right: 0;
+        top: 14px;
+    }
+}
+
+.cs-button-add {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 14px;
+    color: #347EFF;
+    border-radius: 2px;
+    background-color: #f6faff;
+    padding: 9px 12px;
+    cursor: pointer;
+    margin-right: 10px;
+    i.icon-plus {
+        margin-right: 8px;
+    }
+}
+
+.el-scrollbar {
+    top: -8px;
+}
+
+.cs-small-coupon {
+    display: inline-block;
+    position: relative;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 15px;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    .lb,
+    .rb {
+        display: inline-block;
+        position: absolute;
+        width: 5px;
+        height: 32px;
+        top: 0
+    }
+}
+
+.cs-small-coupon.daijinjuan {
+    background-color: #58a5f0;
+    .lb {
+        background-image: url(../../images/coupon-lb-blue.png);
+        left: -5px;
+    }
+    .rb {
+        background-image: url(../../images/coupon-rb-blue.png);
+        right: -5px;
+    }
+}
+
+.cs-small-coupon.lipinjuan {
+    background-color: #fbb256;
+    .lb {
+        background-image: url(../../images/coupon-lb-orange.png);
+        left: -5px;
+    }
+    .rb {
+        background-image: url(../../images/coupon-rb-orange.png);
+        right: -5px;
+    }
+}
+
+.cs-small-coupon.zengpinjuan {
+    background-color: #ef4a55;
+    .lb {
+        background-image: url(../../images/coupon-lb-pink.png);
+        left: -5px;
+    }
+    .rb {
+        background-image: url(../../images/coupon-rb-pink.png);
+        right: -5px;
+    }
+}
+
+.cs-coupon-list {
+    // width: 1000px;
+    .cs-coupon-item {
+        float: left;
+        width: 220px;
+        height: 124px;
+        margin-right: 24px;
+        margin-bottom: 24px;
+        padding-left: 12px;
+        padding-right: 12px;
+        background: url('../../images/coupons_bg_blue.png') no-repeat left top;
+        background-size: 100% auto;
+        color: #323232;
+        .title {
+          padding-top: 16px;
+          font-size: 16px;
+          height: 64px;
+          background-position: bottom;
+          background-repeat: repeat-x;
+          font-weight: bold;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          line-height: 1;
+          .subtitle {
+            font-size: 12px;
+            margin-top: 8px;
+            color: #888888;
+            font-weight: normal;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+        .bot-con {
+            height: 64px;
+            .create-info {
+              height: 34px;
+              font-size: 12px;
+              color: #888888;
+              padding-top: 12px;
+              line-height: 1;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            .buttons {
+                font-size: 12px;
+                padding-bottom: 12px;
+                color: #323232;
+                line-height: 1;
+                display: flex;
+                justify-content: flex-end;
+                .edit,
+                .del {
+                    cursor: pointer;
+                }
+                .edit {
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+    .cs-coupon-item.daijinjuan {}
+    .cs-coupon-item.lipinjuan {}
+    .cs-coupon-item.zengpinjuan {
+      background-image: url('../../images/coupons_bg_red.png');
+    }
+}
+
+.modal-default-style {
+    width: 750px!important;
+    height: auto!important;
+    .el-dialog__header {
+        padding: 0 16px;
+        height: 56px;
+        line-height: 56px;
+        font-size: 18px;
+        color: #323232;
+        background-color: #fbfbfb;
+        box-shadow: inset 0 -1px 0 0 #dddddd;
+    }
+    .el-dialog__close {
+        color: #888888;
+        font-size: 14px;
+    }
+    .el-dialog__body {
+        padding-top: 17px;
+        padding-bottom: 32px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
